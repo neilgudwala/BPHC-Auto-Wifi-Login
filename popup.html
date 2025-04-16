@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BITS WiFi</title>
+    <style>
+        body {
+            width: 250px;
+            font-family: sans-serif;
+            padding: 10px;
+            line-height: 1.6;
+            position: relative;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0;
+        }
+
+        .github-star {
+            transform: scale(1);
+            transform-origin: top right;
+            padding-left: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>BPHC WiFi Auto Login</h2>
+        <div class="github-star">
+            <iframe src="https://ghbtns.com/github-btn.html?user=neilgudwala&repo=BPHC-Auto-Wifi-Login&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+        </div>
+    </div>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button id="saveButton">Update Credentials</button>
+    <button id="loginButton">Instant Login</button>
+
+    <p id="message">Made by Neil Gudwala</p>
+
+    <script src="popup.js"></script>
+</body>
+</html>

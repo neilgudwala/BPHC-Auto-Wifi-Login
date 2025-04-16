@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "BPHC WiFi Auto Login",
+    "description": "This extension saves your Wi-Fi login credentials locally and automatically submits them for you on the login portal",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": " Auto Wifi Login Extension for BPHC"
+      },
+    
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "host_permissions": ["http://172.16.0.30:8090/*", "http://172.16.100.117/*"],
+    "icons": {
+        "50": "icon1.png"
+      },
+      "content_scripts": [{
+        "matches": ["http://172.16.0.30:8090/*", "http://172.16.100.117/*"],
+        "js": ["content.js"],
+        "all_frames": true,
+        "run_at": "document_idle"      
+    }]
+  }
+  

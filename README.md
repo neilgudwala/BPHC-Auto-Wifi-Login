@@ -10,7 +10,7 @@ The BPHC Wifi Auto Login Chrome Extension simplifies the process of logging in t
 ## Disclaimer
 
 This extension is an unofficial tool created for personal ease. Your login credentials are saved locally and not on the cloud.
----
+
 
 # How to Install
 
